@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Helevetica Neue Font Imports */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-RegularItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Thin.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Ultralight.otf');
+  font-weight: 200;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Recoleta Fonts Imports*/
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./assets/fonts/Recoleta/Recoleta-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --tet-black: #000;
+  --tet-white: #ffffff;
+  --tet-green: #04c756;
+  font-size: 16px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue';
+}
+
+hgroup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Recoleta';
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
 }
