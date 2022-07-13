@@ -1,0 +1,103 @@
+/* 
+.container {
+  width: 100%;
+}
+
+.headerScrollTextWrapper {
+  width: 100vw;
+  overflow: hidden;
+
+}
+
+.headerScrollText {
+  width: 200%;
+  height: 96px;
+  position: relative;
+}
+
+.scrollText {
+  left: 50%;
+  width: 100%;
+  overflow: visible;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.scrollText span {
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 120%;
+  color: var(--tet-white);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.scrollText.transparent span {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.scrollText2 {
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: -100%;
+  }
+} */
+
+.marquee {
+  width: 100%;
+  line-height: 50px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+  font-style: normal;
+  font-weight: 500;
+  color: transparent;
+}
+
+.marquee p:hover {
+  animation-play-state: paused;
+}
+
+.marquee p span {
+  -webkit-text-stroke: 1px var(--tet-black);
+  font-family: 'Recoleta';
+  font-size: 80px;
+  line-height: 120%;
+}
+.marquee p span:not(:last-of-type) {
+  margin-right: 70px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .marquee p span {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .marquee p span {
+    font-size: 36px;
+  }
+}

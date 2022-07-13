@@ -1,0 +1,13 @@
+.button {
+  padding: 14px 28px;
+  background: var(--tet-black);
+  color: var(--tet-white);
+  border-radius: 24px;
+  width: fit-content;
+}
+
+.button.transparent {
+  background: transparent;
+  color: var(--tet-black);
+  border: 1px solid var(--tet-black);
+}
