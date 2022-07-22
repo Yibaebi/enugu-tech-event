@@ -138,7 +138,7 @@ const Speakers = ({ speakersList = [] }) => {
       <section className={styles.sliderBtns}>
         <div className={styles.nextBtn} onClick={() => paginate(1)}>
           <svg width="65" height="63" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32.5" cy="31.5" r="31.25" stroke="black" stroke-width="0.5" />
+            <circle cx="32.5" cy="31.5" r="31.25" stroke="black" strokeWidth="0.5" />
             <path
               d="M24.1466 30.6991L44.9844 30.6991C45.4857 30.6991 45.8923 31.1053 45.8923 31.607C45.8923 32.1087 45.4857 32.515 44.9844 32.515L24.1466 32.5154C23.6453 32.5154 23.2386 32.1091 23.2386 31.6074C23.2382 31.1053 23.6453 30.6991 24.1466 30.6991Z"
               fill="black"
@@ -151,7 +151,7 @@ const Speakers = ({ speakersList = [] }) => {
         </div>
         <div className={styles.prevBtn} onClick={() => paginate(-1)}>
           <svg width="65" height="63" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32.5" cy="31.5" r="31.25" stroke="black" stroke-width="0.5" />
+            <circle cx="32.5" cy="31.5" r="31.25" stroke="black" strokeWidth="0.5" />
             <path
               d="M41.8534 33.3009H21.0156C20.5143 33.3009 20.1077 32.8947 20.1077 32.393C20.1077 31.8913 20.5143 31.485 21.0156 31.485L41.8534 31.4846C42.3547 31.4846 42.7614 31.8909 42.7614 32.3926C42.7618 32.8947 42.3547 33.3009 41.8534 33.3009Z"
               fill="black"
