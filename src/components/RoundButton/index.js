@@ -34,7 +34,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
                   <use xlinkHref="#circlePath" fill="none" />
                   <text fill="#000" width={168} height={168}>
                     <textPath xlinkHref="#circlePath" textLength="370">
-                      Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;
+                      Register to attend for free&nbsp;
                     </textPath>
                   </text>
                 </g>
@@ -62,7 +62,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
                   <use xlinkHref="#circlePath" fill="none" />
                   <text fill="#fff" width={168} height={168}>
                     <textPath xlinkHref="#circlePath" textLength="370">
-                      Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;Menu&nbsp;&nbsp;
+                      Register to attend for free&nbsp;
                     </textPath>
                   </text>
                 </g>
