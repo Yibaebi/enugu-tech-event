@@ -1,9 +1,17 @@
 .button {
-  padding: 14px 28px;
+  font-family: 'Helvetica Neue';
+  padding: 18px 28px;
   background: var(--tet-black);
   color: var(--tet-white);
   border-radius: 24px;
   width: fit-content;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .button.transparent {

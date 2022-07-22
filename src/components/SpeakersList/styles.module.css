@@ -1,0 +1,147 @@
+/* Speakers */
+.speakersContainer {
+  background: radial-gradient(
+    157.87% 310.86% at -65.07% 23.89%,
+    rgba(110, 234, 128, 0.5) 0%,
+    rgba(126, 233, 156, 0.5) 31.4%,
+    rgba(233, 251, 238, 0.5) 100%
+  );
+  min-height: 638px;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  margin-bottom: 4rem;
+}
+
+.speakersContainer.mobile {
+  background: var(--tet-white);
+  position: relative;
+}
+
+.speakersContainer.mobile::after {
+  position: absolute;
+  content: '';
+  bottom: -110px;
+  left: 50%;
+  width: 100%;
+  height: 158px;
+  transform: translateX(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='375' height='79' viewBox='0 0 375 79' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_258_3058' fill='white'%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z'/%3E%3C/mask%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z' fill='%2379E0E1' stroke='black' stroke-width='2' mask='url(%23path-1-inside-1_258_3058)'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.speakerList {
+  width: 100%;
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-top: 88px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 290px;
+  margin-bottom: 24px;
+}
+
+.speaker img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.speaker h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+
+.speaker p {
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.sliderBtns {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .speakerList {
+    padding-top: 16px;
+  }
+
+  .sliderSpeakersList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 28px;
+    padding-bottom: 198px;
+  }
+
+  .sliderSpeakersList > h5 {
+    /* font-family: 'GT Walsheim Pro'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tet-orange);
+    margin-bottom: 64px;
+  }
+
+  .sliderSpeakersList > h3 {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 36px;
+    color: var(--tet-black);
+    max-width: 340px;
+  }
+
+  .speakerSlide {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 424px;
+  }
+
+  .speakerSlide h5 {
+    font-family: 'GT Walsheim Pro';
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b9b9b9;
+  }
+
+  .speakerSlide h4 {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: var(--tet-black);
+    margin-bottom: 2px;
+    margin-top: 24px;
+  }
+
+  .prevBtn {
+    margin-left: 16px;
+  }
+
+  .nextBtn {
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,185 @@
+/* Program Agenda */
+.programAgenda {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 54px;
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.programAgendaSection {
+  max-width: 500px;
+}
+
+.programAgendaSection:first-of-type {
+  width: calc(50% + 50px);
+  margin-right: 50px;
+}
+
+.programAgendaSection:last-of-type {
+  width: 50%;
+}
+
+.programAgendaSection h5,
+.partnersSection h5 {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--tet-green);
+  margin-bottom: 16px;
+}
+
+.partnersSection h5 {
+  margin-bottom: 33px;
+}
+
+.programAgendaSection > h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 120%;
+  color: var(--tet-black);
+  margin-bottom: 16px;
+}
+
+.programAgendaSection > p {
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.highlightContainer h5 {
+  margin-bottom: 26px;
+}
+
+.highlightList {
+  list-style-type: none;
+}
+
+.highlight h6 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tick {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.highlight p,
+.partnersStatement p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #b9b9b9;
+  margin-left: 33px;
+  margin-bottom: 26px;
+}
+
+.partnersStatement p {
+  margin-right: 33px;
+}
+
+@media screen and (max-width: 1000px) {
+  .programAgenda {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .programAgenda {
+    flex-wrap: wrap;
+    padding-bottom: 51px;
+  }
+
+  .programAgenda .programAgendaSection {
+    max-width: unset;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .programAgenda .programAgendaSection:first-of-type {
+    margin-bottom: 62px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .programAgenda > h5 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tet-white);
+    margin-bottom: 64px;
+    margin-top: 32px;
+  }
+
+  .programAgenda {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 206px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    position: relative;
+    background-color: var(--tet-black);
+  }
+
+  .programAgenda::after {
+    position: absolute;
+    content: '';
+    bottom: -45px;
+    left: 50%;
+    width: 100%;
+    height: 158px;
+    transform: translateX(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg width='375' height='79' viewBox='0 0 375 79' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_258_3035' fill='white'%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z'/%3E%3C/mask%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z' fill='white' stroke='black' stroke-width='2' mask='url(%23path-1-inside-1_258_3035)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .programAgendaSection > h5,
+  .highlightContainer h5 {
+    font-size: 27px;
+    color: var(--tet-orange);
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .highlightContainer h5 {
+    margin-bottom: 16px;
+  }
+
+  .programAgendaSection > h3 {
+    font-size: 27px;
+    line-height: 36px;
+    color: var(--tet-white);
+  }
+
+  .highlight h6 {
+    color: var(--tet-white);
+  }
+
+  .programAgendaSection > p {
+    color: var(--tet-light-grey);
+  }
+}

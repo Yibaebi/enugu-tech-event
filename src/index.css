@@ -44,52 +44,131 @@
 
 /* Recoleta Fonts Imports*/
 @font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Black.ttf');
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Black.ttf');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Bold.ttf');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Light.ttf');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Medium.ttf');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-SemiBold.ttf');
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Recoleta';
-  src: url('./assets/fonts/Recoleta/Recoleta-Thin.ttf');
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Bold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Light.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*  */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-UltraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy/Gilroy-Thin.ttf');
   font-weight: 100;
   font-style: normal;
 }
 
 :root {
   --tet-black: #000;
+  --tet-black-variant: #242424;
   --tet-white: #ffffff;
+  --tet-light-grey: #b9b9b9;
   --tet-green: #04c756;
+  --tet-orange: #ff6f43;
+  --tet-cyan: #79e0e1;
   font-size: 16px;
 }
 
@@ -97,21 +176,121 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue';
 }
 
-hgroup,
 h1,
 h2,
 h3,
-h4,
+h4 {
+  font-family: 'Gilroy';
+  font-weight: 700;
+}
+
 h5,
 h6 {
-  font-family: 'Recoleta';
+  font-family: 'GT Walsheim Pro';
+}
+
+p {
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  font-weight: 400;
 }
 
 button {
   outline: none;
   cursor: pointer;
   border: none;
+}
+
+#circle {
+  width: 168px;
+  height: 168px;
+  background: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='86' height='86' viewBox='0 0 86 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_258_2903)'%3E%3Cg clip-path='url(%23clip1_258_2903)'%3E%3Cpath d='M43.2785 0.825348C19.9944 0.825348 0.943848 19.8759 0.943848 43.16C0.943848 66.4441 19.9944 85.4947 43.2785 85.4947C66.5626 85.4947 85.6132 66.4441 85.6132 43.16C85.6132 19.8759 66.5626 0.825348 43.2785 0.825348ZM43.2785 82.8488C21.4489 82.8488 3.58976 64.9896 3.58976 43.16C3.58976 21.3304 21.4489 3.47126 43.2785 3.47126C65.1081 3.47126 82.9673 21.3304 82.9673 43.16C82.9673 64.9896 65.1081 82.8488 43.2785 82.8488Z' fill='%23FF6F43'/%3E%3Cpath d='M43.2784 9.55717C24.757 9.55717 9.67529 24.6389 9.67529 43.1603C9.67529 61.6817 24.757 76.7635 43.2784 76.7635C61.7999 76.7635 76.8816 61.6817 76.8816 43.1603C76.8816 24.6389 61.7999 9.55717 43.2784 9.55717ZM43.2784 74.1175C26.2115 74.1175 12.3212 60.2265 12.3212 43.1603C12.3212 26.0942 26.2123 12.2031 43.2784 12.2031C60.3446 12.2031 74.2357 26.0942 74.2357 43.1603C74.2357 60.2265 60.3446 74.1175 43.2784 74.1175Z' fill='%23FF6F43'/%3E%3Cpath d='M43.2788 18.1557C29.5201 18.1557 18.2742 29.4009 18.2742 43.1604C18.2742 56.9199 29.5193 68.1651 43.2788 68.1651C57.0384 68.1651 68.2835 56.9199 68.2835 43.1604C68.2835 29.4009 57.0384 18.1557 43.2788 18.1557ZM43.2788 65.5176C30.9753 65.5176 20.9201 55.4632 20.9201 43.1589C20.9201 30.8546 30.9746 20.8001 43.2788 20.8001C55.5831 20.8001 65.6376 30.8546 65.6376 43.1589C65.6376 55.4632 55.5831 65.5176 43.2788 65.5176Z' fill='%23FF6F43'/%3E%3Cpath d='M43.2787 26.8887C34.2826 26.8887 27.0071 34.165 27.0071 43.1604C27.0071 52.1557 34.2834 59.432 43.2787 59.432C52.2741 59.432 59.5503 52.1557 59.5503 43.1604C59.5503 34.165 52.2741 26.8887 43.2787 26.8887ZM43.2787 56.7876C35.7378 56.7876 29.6522 50.702 29.6522 43.1611C29.6522 35.6203 35.7378 29.5346 43.2787 29.5346C50.8196 29.5346 56.9052 35.6203 56.9052 43.1611C56.9052 50.702 50.8196 56.7876 43.2787 56.7876Z' fill='%23FF6F43'/%3E%3Cpath d='M43.2784 35.487C39.0449 35.487 35.6052 38.9267 35.6052 43.1602C35.6052 47.3937 39.0449 50.8334 43.2784 50.8334C47.5119 50.8334 50.9515 47.3937 50.9515 43.1602C50.9515 38.9267 47.5119 35.487 43.2784 35.487ZM43.2784 48.1874C40.5002 48.1874 38.2511 45.9384 38.2511 43.1602C38.2511 40.382 40.5002 38.133 43.2784 38.133C46.0566 38.133 48.3056 40.382 48.3056 43.1602C48.3056 45.9384 46.0566 48.1874 43.2784 48.1874Z' fill='%23FF6F43'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_258_2903'%3E%3Crect width='84.6677' height='84.6677' fill='white' transform='translate(0.7854 0.400269)'/%3E%3C/clipPath%3E%3CclipPath id='clip1_258_2903'%3E%3Crect width='84.6693' height='84.6693' fill='white' transform='translate(0.943848 0.825348)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#circle.white {
+  background-image: url("data:image/svg+xml,%3Csvg width='86' height='86' viewBox='0 0 86 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_258_3074)'%3E%3Cpath d='M43.2785 0.825684C19.9944 0.825684 0.943848 19.8763 0.943848 43.1604C0.943848 66.4444 19.9944 85.495 43.2785 85.495C66.5626 85.495 85.6132 66.4444 85.6132 43.1604C85.6132 19.8763 66.5626 0.825684 43.2785 0.825684ZM43.2785 82.8491C21.4489 82.8491 3.58976 64.9899 3.58976 43.1604C3.58976 21.3308 21.4489 3.4716 43.2785 3.4716C65.1081 3.4716 82.9673 21.3308 82.9673 43.1604C82.9673 64.9899 65.1081 82.8491 43.2785 82.8491Z' fill='white'/%3E%3Cpath d='M43.2784 9.55762C24.757 9.55762 9.67529 24.6393 9.67529 43.1608C9.67529 61.6822 24.757 76.7639 43.2784 76.7639C61.7999 76.7639 76.8816 61.6822 76.8816 43.1608C76.8816 24.6393 61.7999 9.55762 43.2784 9.55762ZM43.2784 74.118C26.2115 74.118 12.3212 60.2269 12.3212 43.1608C12.3212 26.0946 26.2123 12.2035 43.2784 12.2035C60.3446 12.2035 74.2357 26.0946 74.2357 43.1608C74.2357 60.2269 60.3446 74.118 43.2784 74.118Z' fill='white'/%3E%3Cpath d='M43.2788 18.1562C29.5201 18.1562 18.2742 29.4014 18.2742 43.1609C18.2742 56.9204 29.5193 68.1656 43.2788 68.1656C57.0384 68.1656 68.2835 56.9204 68.2835 43.1609C68.2835 29.4014 57.0384 18.1562 43.2788 18.1562ZM43.2788 65.5182C30.9753 65.5182 20.9201 55.4637 20.9201 43.1594C20.9201 30.8551 30.9746 20.8007 43.2788 20.8007C55.5831 20.8007 65.6376 30.8551 65.6376 43.1594C65.6376 55.4637 55.5831 65.5182 43.2788 65.5182Z' fill='white'/%3E%3Cpath d='M43.2787 26.8892C34.2826 26.8892 27.0071 34.1654 27.0071 43.1608C27.0071 52.1562 34.2834 59.4324 43.2787 59.4324C52.2741 59.4324 59.5503 52.1562 59.5503 43.1608C59.5503 34.1654 52.2741 26.8892 43.2787 26.8892ZM43.2787 56.788C35.7378 56.788 29.6522 50.7024 29.6522 43.1616C29.6522 35.6207 35.7378 29.5351 43.2787 29.5351C50.8196 29.5351 56.9052 35.6207 56.9052 43.1616C56.9052 50.7024 50.8196 56.788 43.2787 56.788Z' fill='white'/%3E%3Cpath d='M43.2784 35.4873C39.0449 35.4873 35.6052 38.927 35.6052 43.1605C35.6052 47.3939 39.0449 50.8336 43.2784 50.8336C47.5119 50.8336 50.9515 47.3939 50.9515 43.1605C50.9515 38.927 47.5119 35.4873 43.2784 35.4873ZM43.2784 48.1877C40.5002 48.1877 38.2511 45.9387 38.2511 43.1605C38.2511 40.3823 40.5002 38.1332 43.2784 38.1332C46.0566 38.1332 48.3056 40.3823 48.3056 43.1605C48.3056 45.9387 46.0566 48.1877 43.2784 48.1877Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_258_3074'%3E%3Crect width='84.6693' height='84.6693' fill='white' transform='translate(0.943848 0.825684)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+#circle text {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Gilroy';
+}
+
+#circle svg {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  -ms-animation-duration: 10s;
+  -o-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

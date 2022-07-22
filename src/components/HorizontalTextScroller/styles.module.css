@@ -74,7 +74,8 @@
 
 .marquee p span {
   -webkit-text-stroke: 1px var(--tet-black);
-  font-family: 'Recoleta';
+  font-family: 'Gilroy';
+  font-weight: 600;
   font-size: 80px;
   line-height: 120%;
 }

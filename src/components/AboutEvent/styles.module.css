@@ -1,0 +1,82 @@
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  position: relative;
+  padding-bottom: 190px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container::after {
+  content: '';
+  bottom: -70px;
+  left: 50%;
+  width: 100%;
+  height: 158px;
+  position: absolute;
+  transform: translateX(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='375' height='79' viewBox='0 0 375 79' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_294_4407' fill='white'%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z'/%3E%3C/mask%3E%3Cpath d='M382 79C382 68.6256 376.982 58.3527 367.233 48.768C357.483 39.1833 343.193 30.4744 325.179 23.1386C307.164 15.8027 285.778 9.98364 262.241 6.01352C238.703 2.04339 213.476 -4.53481e-07 188 0C162.524 4.53481e-07 137.297 2.0434 113.759 6.01352C90.2222 9.98364 68.8358 15.8027 50.8213 23.1386C32.8067 30.4744 18.5168 39.1833 8.76737 48.768C-0.982046 58.3527 -6 68.6256 -6 79L188 79H382Z' fill='black' stroke='black' stroke-width='2' mask='url(%23path-1-inside-1_294_4407)'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.container h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tet-orange);
+  margin-bottom: 4rem;
+}
+
+.container h4,
+.brandSupportHeader {
+  font-size: 27px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--tet-black-variant);
+  margin-bottom: 24px;
+}
+
+.brandSupportHeader {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  max-width: 327px;
+  align-self: flex-start;
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer .logo:nth-of-type(2) {
+  margin: 15px;
+}
