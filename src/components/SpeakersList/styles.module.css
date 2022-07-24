@@ -106,6 +106,7 @@
     line-height: 36px;
     color: var(--tet-black);
     max-width: 340px;
+    text-align: center;
   }
 
   .speakerSlide {
@@ -127,6 +128,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #b9b9b9;
+    max-width: 223px;
+    margin-bottom: 24px;
+    min-height: 48px;
   }
 
   .speakerSlide h4 {
@@ -135,6 +139,10 @@
     color: var(--tet-black);
     margin-bottom: 2px;
     margin-top: 24px;
+  }
+
+  .speakerSlide img {
+    object-fit: cover;
   }
 
   .prevBtn {
