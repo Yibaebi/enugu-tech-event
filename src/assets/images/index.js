@@ -1,5 +1,8 @@
 import collinsNdukwe from './collins ndukwe.png'
 import drMbah from './dr mba.png'
+import falz from './falz.png'
+import mr_eazi from './mr_eazi.png'
+import napaOwusah from './napa owusah.png'
 import okeyEze from './okey eze.png'
 import programImg from './program_img.png'
 import speakerMan from './speaker_man.png'
@@ -18,4 +21,7 @@ export {
   okeyEze,
   collinsNdukwe,
   williamsUchemba,
+  falz,
+  napaOwusah,
+  mr_eazi,
 }
