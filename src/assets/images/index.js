@@ -4,6 +4,7 @@ import falz from './falz.png'
 import mr_eazi from './mr_eazi.png'
 import napaOwusah from './napa owusah.png'
 import okeyEze from './okey eze.png'
+import profileImageFiller from './profile-img-filler.png'
 import programImg from './program_img.png'
 import speakerMan from './speaker_man.png'
 import speakerWoman from './speaker_wman.png'
@@ -24,4 +25,5 @@ export {
   falz,
   napaOwusah,
   mr_eazi,
+  profileImageFiller,
 }

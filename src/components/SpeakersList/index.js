@@ -8,6 +8,7 @@ import {
   mr_eazi,
   napaOwusah,
   okeyEze,
+  profileImageFiller,
   SpeakersArrowLeft,
   SpeakersArrowRight,
   williamsUchemba,
@@ -23,7 +24,7 @@ const SpeakersList = () => {
     () => [
       {
         image: drMbah,
-        name: 'Dr. Peter Mba',
+        name: 'Dr. Peter Mbah',
         designation: 'Keynote Speaker CEO, Pinnacle Oil & Gas',
         linkedIn: 'https://www.linkedin.com',
       },
@@ -31,39 +32,44 @@ const SpeakersList = () => {
         image: collinsNdukwe,
         name: 'Collins Ndukwe',
         designation: 'Senior Eng. Program Manager, Google',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/collins-ndukwe-42bb192b/',
       },
       {
         image: williamsUchemba,
         name: 'Williams Uchembah',
         designation: 'Actor, Filmaker, Humanitarian. Founder, WUF',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/williams-uchemba-1807091a0/',
       },
       {
         image: okeyEze,
         name: 'Okey Eze',
-        designation: 'No Position Yet',
-        linkedIn: 'https://www.linkedin.com',
+        designation: 'Managing Director, Tenece Cross-Border Subsidiaries',
+        profile: 'http://www.tenece.com/okechukwu/',
       },
       {
-        image: okeyEze,
+        image: profileImageFiller,
         name: 'Sultan Akintunde',
         designation: 'Co-Founder + Tech, AltSchool Africa + TalentQL',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/hacksultan/',
       },
       {
         image: napaOwusah,
         name: 'Napa Onwusah',
         designation: 'Head of Sales, GCS, Sub-Saharan Africa, Google',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/napaonwusah/',
       },
       {
         image: mr_eazi,
         name: 'Oluwatosin Ajibade (Mr. Eazi)',
         designation: 'Founder, Empawa',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/oluwatosin-%E2%80%9C-mr-eazi-%E2%80%9D-ajibade-71616560/',
       },
-      { image: falz, name: 'Falz', designation: 'Guest Performer Artiste', linkedIn: 'https://www.linkedin.com' },
+      {
+        image: falz,
+        name: 'Falz',
+        designation: 'Guest Performer Artiste',
+        twitter: 'https://twitter.com/falzthebahdguy',
+      },
     ],
     [],
   )
@@ -136,13 +142,25 @@ const Speakers = ({ speakersList = [] }) => {
   }, [])
 
   const [[page, direction], setPage] = useState([0, 0])
-  const currentSpeaker = wrap(0, speakersList.length, page)
+  const currentSpeakerKey = wrap(0, speakersList.length, page)
   const paginate = useCallback(
     newDirection => {
       setPage([page + newDirection, newDirection])
     },
     [page],
   )
+
+  const handleProfileClick = speaker => {
+    const profileLink = speaker.linkedIn || speaker.twitter || speaker.profile
+    window.open(profileLink, 'blank')
+  }
+
+  const currentSpeaker = useMemo(() => speakersList[currentSpeakerKey], [speakersList, currentSpeakerKey])
+  const profileType = useMemo(
+    () => (currentSpeaker.linkedIn ? 'LinkedIn' : currentSpeaker.twitter ? 'Twitter' : 'Profile'),
+    [currentSpeaker.linkedIn, currentSpeaker.twitter],
+  )
+  const buttonTitle = profileType === 'Profile' ? `View Speaker Profile` : `View ${profileType} Profile`
 
   return (
     <React.Fragment>
@@ -170,10 +188,10 @@ const Speakers = ({ speakersList = [] }) => {
         }}
         className={styles.speakerSlide}
       >
-        <img src={speakersList[currentSpeaker].image} alt="speaker" />
-        <h4>{speakersList[currentSpeaker].name}</h4>
-        <h5>{speakersList[currentSpeaker].designation}</h5>
-        <Button label="View Linkedin profile" />
+        <img src={currentSpeaker.image} alt="speaker" />
+        <h4>{currentSpeaker.name}</h4>
+        <h5>{currentSpeaker.designation}</h5>
+        <Button label={buttonTitle} onClick={() => handleProfileClick(currentSpeaker)} />
       </motion.div>
       <section className={styles.sliderBtns}>
         <div className={styles.nextBtn} onClick={() => paginate(1)}>
