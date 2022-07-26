@@ -14,6 +14,11 @@
   text-transform: uppercase;
 }
 
+.button:disabled {
+  background-color: #00000078;
+  cursor: not-allowed;
+}
+
 .button.transparent {
   background: transparent;
   color: var(--tet-black);

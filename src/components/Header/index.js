@@ -9,6 +9,11 @@ import styles from './styles.module.css'
 const Header = () => {
   const windowSize = useWindowSize()
   const isMobile = useMemo(() => windowSize.width <= 480, [windowSize])
+  const openRegLink = () =>
+    window.open(
+      'https://docs.google.com/forms/d/124pPi1it79qGOsMgCG53umoowUwLMDAf9kVyN2jlYa4/edit?usp=sharing',
+      '_blank',
+    )
 
   return (
     <header className={styles.header}>
@@ -19,7 +24,7 @@ const Header = () => {
         </React.Fragment>
       ) : (
         <div className={styles.eventDate}>
-          <RoundButton position="fixed" />
+          <RoundButton position="fixed" onClick={openRegLink} />
           <span>September 28th, 2022</span> | <span>Golden Heart Centre, Emene</span>
         </div>
       )}
@@ -35,11 +40,11 @@ const Header = () => {
               employers, generating business ideas, marketing strategies, and aquiring the necessary technical skills
               required to work in tech.
             </p>
-            <Button label="Register To Attend" />
+            <Button label="Register To Attend" onClick={openRegLink} />
           </section>
         </React.Fragment>
       ) : (
-        <RoundButton color="orange" />
+        <RoundButton color="orange" onClick={openRegLink} />
       )}
     </header>
   )

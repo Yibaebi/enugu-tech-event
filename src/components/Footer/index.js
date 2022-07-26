@@ -7,10 +7,20 @@ import styles from './styles.module.css'
 const Footer = () => {
   const windowSize = useWindowSize()
   const isMobile = windowSize.width <= 480
+
+  const openRegLink = () =>
+    window.open(
+      'https://docs.google.com/forms/d/124pPi1it79qGOsMgCG53umoowUwLMDAf9kVyN2jlYa4/edit?usp=sharing',
+      '_blank',
+    )
   return (
     <footer className={styles.footer}>
       <section className={styles.copywrite}>
-        {isMobile ? <RoundButton color="white" /> : <RoundButton size="large" />}
+        {isMobile ? (
+          <RoundButton color="white" onClick={openRegLink} />
+        ) : (
+          <RoundButton size="large" onClick={openRegLink} />
+        )}
         {!isMobile && (
           <React.Fragment>
             <p>&copy; Enugu Tech Summit 2022</p>

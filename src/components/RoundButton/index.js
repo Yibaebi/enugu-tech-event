@@ -3,7 +3,7 @@ import { RightArrow, SlantedArrow } from '../../assets'
 import { useWindowSize } from '../../hooks'
 import styles from './styes.module.css'
 
-const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
+const RoundButton = ({ position = '', size = 'small', color = 'black', onClick = () => {} }) => {
   const windowSize = useWindowSize()
   const isMobile = useMemo(() => windowSize.width <= 480, [windowSize])
   const isOrange = useMemo(() => color === 'orange', [color])
@@ -13,7 +13,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
       {isMobile ? (
         <React.Fragment>
           {isOrange ? (
-            <button id="circle">
+            <button id="circle" onClick={() => onClick()}>
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
               </svg>
             </button>
           ) : (
-            <button id="circle" className="white">
+            <button id="circle" className="white" onClick={() => onClick()}>
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black' }) => {
           )}
         </React.Fragment>
       ) : (
-        <button className={`${styles.button} ${styles[position]} ${styles[size]}`}>
+        <button className={`${styles.button} ${styles[position]} ${styles[size]}`} onClick={() => onClick()}>
           <React.Fragment>{size === 'small' ? <SlantedArrow /> : <RightArrow />}</React.Fragment>
         </button>
       )}

@@ -15,7 +15,7 @@ const AboutEvent = () => {
         tech.
       </p>
 
-      <Button label="View Event agenda" />
+      <Button label="View Event agenda" disabled />
 
       <h4 className={styles.brandSupportHeader}>Supported by top brands and merchants</h4>
 
