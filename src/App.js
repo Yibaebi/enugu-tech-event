@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import styles from './App.module.css'
 import { AltSchool, CowryWise, Kuda } from './assets'
-import { programImg } from './assets/images'
+import { programImg, programImg2 } from './assets/images'
 import { AboutEvent, Button, Footer, Header, HorizontalTextScroller, ProgramAgenda, SpeakersList } from './components'
 import { ContactUs } from './components/ContactUs'
 import { useWindowSize } from './hooks'
@@ -30,7 +30,7 @@ function App() {
             <HorizontalTextScroller text="Program Agenda" />
             <ProgramAgenda />
             <section className={styles.programCover} style={{ marginBottom: '0px' }}>
-              <img src={programImg} alt="program cover" />
+              <img src={programImg2} alt="program cover" />
             </section>
             <SpeakersList />
             <HorizontalTextScroller text="About The Event" />

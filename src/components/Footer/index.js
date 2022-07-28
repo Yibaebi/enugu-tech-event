@@ -35,6 +35,7 @@ const Footer = () => {
             <p>Event Center</p>
             <h3>Golden Heart Centre, Emene.</h3>
           </aside>
+
           {!isMobile && (
             <aside className={styles.section}>
               <p>Enquiries and Sponsorships</p>
@@ -42,16 +43,28 @@ const Footer = () => {
             </aside>
           )}
         </div>
+
         <div className={styles.eventSectionWrapper}>
           <aside className={styles.section}>
             <p>Event Date</p>
             <h3>28th September 2022.</h3>
           </aside>
+
           <aside className={styles.section}>
-            <p>Follow Online</p>
-            <h3>#EnuguTechSummit</h3>
+            <p>Event Time</p>
+            <h3>10am prompt.</h3>
           </aside>
         </div>
+
+        {isMobile && (
+          <div className={styles.eventSectionWrapper}>
+            <aside className={styles.section}>
+              <p>Follow Online</p>
+              <h3>#EnuguTechSummit</h3>
+            </aside>
+          </div>
+        )}
+
         {isMobile && (
           <div className={styles.websiteCopy}>
             <img src={mobileWhiteLogo} alt="logo" />

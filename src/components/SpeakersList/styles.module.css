@@ -54,6 +54,7 @@
   border-radius: 100%;
   object-fit: cover;
   margin-bottom: 16px;
+  filter: grayscale(1);
 }
 
 .speaker h6 {
@@ -67,6 +68,9 @@
   font-size: 12px;
   line-height: 24px;
   margin-bottom: 16px;
+  max-width: 223px;
+  min-height: 48px;
+  text-align: center;
 }
 
 .sliderBtns {
@@ -143,6 +147,11 @@
 
   .speakerSlide img {
     object-fit: cover;
+    width: 160px;
+    height: 200px;
+    background: #d9d9d9;
+    border-radius: 48px;
+    filter: grayscale(1);
   }
 
   .prevBtn {

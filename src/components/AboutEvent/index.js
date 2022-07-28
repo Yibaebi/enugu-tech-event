@@ -7,7 +7,7 @@ const AboutEvent = () => {
   return (
     <section className={styles.container}>
       <h5>About the Event</h5>
-      <h4>Exposing Enugu State Youth to Employment and Business Opportunities in Tech</h4>
+      <h4>Exploring Employment & Business Opportunities in Tech for Enugu State Youth</h4>
       <p>
         Brought to you by the Williams Uchemba Foundation, join us for the first ever Tech knowledge acquisition event
         this September. This event is aimed at building young people’s confidence in approaching potential employers,
