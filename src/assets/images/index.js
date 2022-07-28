@@ -1,11 +1,13 @@
 import collinsNdukwe from './collins ndukwe.png'
 import drMbah from './dr mba.png'
 import falz from './falz.png'
+import hackSultan from './Hack_Sultan.jpeg'
 import mr_eazi from './mr_eazi.png'
 import napaOwusah from './napa owusah.png'
 import okeyEze from './okey eze.png'
 import profileImageFiller from './profile-img-filler.png'
-import programImg from './program_img.png'
+import programImg from './program_img.jpeg'
+import programImg2 from './program_img_2.jpeg'
 import speakerMan from './speaker_man.png'
 import speakerWoman from './speaker_wman.png'
 import mobileLogo from './TxE Summit_Colour 2.png'
@@ -26,4 +28,6 @@ export {
   napaOwusah,
   mr_eazi,
   profileImageFiller,
+  hackSultan,
+  programImg2,
 }
