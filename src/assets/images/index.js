@@ -1,4 +1,4 @@
-import collinsNdukwe from './collins ndukwe.png'
+import collinsNdukwe from './collins ndukwe.jpeg'
 import drMbah from './dr mba.png'
 import falz from './falz.png'
 import hackSultan from './Hack_Sultan.jpeg'

@@ -30,6 +30,7 @@
 }
 
 .fixed {
+  z-index: 10;
   width: 120px !important;
   height: 120px !important;
   position: fixed !important;

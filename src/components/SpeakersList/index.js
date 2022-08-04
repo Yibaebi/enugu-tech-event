@@ -4,9 +4,7 @@ import React, { useCallback, useMemo, useState } from 'react'
 import {
   collinsNdukwe,
   drMbah,
-  falz,
   hackSultan,
-  mr_eazi,
   napaOwusah,
   okeyEze,
   SpeakersArrowLeft,
@@ -25,50 +23,44 @@ const SpeakersList = () => {
       {
         image: drMbah,
         name: 'Dr. Peter Mbah',
-        designation: 'Keynote Speaker CEO, Pinnacle Oil & Gas',
+        designation: 'Keynote Speaker CEO',
+        company: 'Pinnacle Oil & Gas',
         linkedIn: 'https://www.linkedin.com',
       },
       {
         image: collinsNdukwe,
         name: 'Collins Ndukwe',
-        designation: 'Senior Eng. Program Manager, Google',
+        designation: 'Senior Engineering Program Manager',
+        company: 'Google, Seattle Washington State',
         linkedIn: 'https://www.linkedin.com/in/collins-ndukwe-42bb192b/',
+      },
+      {
+        image: napaOwusah,
+        name: 'Napa Onwusah',
+        designation: 'Head of Sales',
+        company: ' GCS, Sub-Saharan Africa, Google',
+        linkedIn: 'https://www.linkedin.com/in/napaonwusah/',
       },
       {
         image: williamsUchemba,
         name: 'Williams Uchembah',
-        designation: 'Actor, Filmaker, Humanitarian. Founder, WUF',
+        designation: 'Actor, Filmaker, Humanitarian',
+        company: 'Founder, WUF',
         linkedIn: 'https://www.linkedin.com/in/williams-uchemba-1807091a0/',
       },
       {
         image: okeyEze,
         name: 'Okey Eze',
-        designation: 'Managing Director, Tenece Cross-Border Subsidiaries',
+        designation: 'Managing Director',
+        company: 'Tenece Cross-Border Subsidiaries',
         profile: 'http://www.tenece.com/okechukwu/',
       },
       {
         image: hackSultan,
         name: 'Sultan Akintunde',
-        designation: 'Co-Founder + Tech, AltSchool Africa + TalentQL',
+        designation: 'Co-Founder + Tech',
+        company: 'AltSchool Africa + TalentQL',
         linkedIn: 'https://www.linkedin.com/in/hacksultan/',
-      },
-      {
-        image: napaOwusah,
-        name: 'Napa Onwusah',
-        designation: 'Head of Sales, GCS, Sub-Saharan Africa, Google',
-        linkedIn: 'https://www.linkedin.com/in/napaonwusah/',
-      },
-      {
-        image: mr_eazi,
-        name: 'Oluwatosin Ajibade (Mr. Eazi)',
-        designation: 'Founder, Empawa',
-        linkedIn: 'https://www.linkedin.com/in/oluwatosin-%E2%80%9C-mr-eazi-%E2%80%9D-ajibade-71616560/',
-      },
-      {
-        image: falz,
-        name: 'Falz',
-        designation: 'Guest Performer Artiste',
-        twitter: 'https://twitter.com/falzthebahdguy',
       },
     ],
     [],
@@ -84,14 +76,19 @@ const SpeakersList = () => {
           <HorizontalTextScroller text="Speakers" background="transparent" />
           <aside className={styles.speakerList}>
             {SPEAKERS_LIST.map((speaker, idx) => {
+              const profileType = speaker.linkedIn ? 'LinkedIn' : speaker.twitter ? 'Twitter' : 'Profile'
+              const buttonTitle = profileType === 'Profile' ? `View Speaker Profile` : `View ${profileType} Profile`
+
               return (
                 <div key={idx} className={styles.speaker}>
                   <img src={speaker.image} alt="" />
                   <h6>{speaker.name}</h6>
-                  <p>{speaker.designation}</p>
+                  <p>
+                    {speaker.designation} <br /> {speaker.company}
+                  </p>
                   <Button
                     buttonType="transparent"
-                    label="View on LinkedIn"
+                    label={buttonTitle}
                     onClick={() => window.open(speaker.linkedIn, 'blank')}
                   />
                 </div>
@@ -190,14 +187,16 @@ const Speakers = ({ speakersList = [] }) => {
       >
         <img src={currentSpeaker.image} alt="speaker" />
         <h4>{currentSpeaker.name}</h4>
-        <h5>{currentSpeaker.designation}</h5>
+        <h5>
+          {currentSpeaker.designation} <br /> {currentSpeaker.company}
+        </h5>
         <Button label={buttonTitle} onClick={() => handleProfileClick(currentSpeaker)} />
       </motion.div>
       <section className={styles.sliderBtns}>
-        <div className={styles.nextBtn} onClick={() => paginate(1)}>
+        <div className={styles.nextBtn} onClick={() => paginate(-1)}>
           <SpeakersArrowLeft />
         </div>
-        <div className={styles.prevBtn} onClick={() => paginate(-1)}>
+        <div className={styles.prevBtn} onClick={() => paginate(1)}>
           <SpeakersArrowRight />
         </div>
       </section>
