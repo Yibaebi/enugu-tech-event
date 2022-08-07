@@ -74,10 +74,32 @@
 .logoContainer {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logoContainer .logo:nth-of-type(2) {
   margin: 15px;
+}
+
+.logo,
+.logoContainer img {
+  margin: 17px;
+}
+
+.logoContainer img {
+  height: 35px;
+  min-width: 35px;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.logoContainer img.genesysLogo {
+  height: 90px;
+  min-width: 115px;
+}
+
+.logoContainer .eldovGroup {
+  min-width: 85px;
 }

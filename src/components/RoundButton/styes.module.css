@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .button.fixed {
+  .fixed {
     top: unset;
     right: 25px;
     bottom: 70px;

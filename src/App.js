@@ -1,7 +1,16 @@
 import React, { useMemo } from 'react'
 import styles from './App.module.css'
 import { AltSchool, CowryWise, Kuda } from './assets'
-import { programImg, programImg2 } from './assets/images'
+import {
+  eldovGroup,
+  factory1,
+  genesysLogo,
+  programImg,
+  programImg2,
+  smoothLuxury,
+  teneceGroup,
+  veeMost,
+} from './assets/images'
 import { AboutEvent, Button, Footer, Header, HorizontalTextScroller, ProgramAgenda, SpeakersList } from './components'
 import { ContactUs } from './components/ContactUs'
 import { useWindowSize } from './hooks'
@@ -51,6 +60,12 @@ function App() {
                   <CowryWise className={styles.logo} />
                   <Kuda className={styles.logo} />
                   <AltSchool className={styles.logo} />
+                  <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" title="genesys" />
+                  <img src={factory1} alt="factory1" title="Factory1" />
+                  <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" title="eldov group" />
+                  <img src={teneceGroup} alt="Tenece" title="Tenece" />
+                  <img src={veeMost} alt="veeMost" title="veeMost" />
+                  <img src={smoothLuxury} alt="smooth luxury" title="smooth luxury" />
                 </div>
               </aside>
             </section>

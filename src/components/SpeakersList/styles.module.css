@@ -31,7 +31,9 @@
 }
 
 .speakerList {
+  max-width: 1400px;
   width: 100%;
+  margin: 0 auto;
   padding-left: 104px;
   padding-right: 104px;
   padding-top: 88px;
@@ -45,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 290px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .speaker img {

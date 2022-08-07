@@ -75,8 +75,25 @@
   flex-wrap: wrap;
 }
 
-.logo {
+.logo,
+.logoContainer img {
   margin: 17px;
+}
+
+.logoContainer img {
+  height: 35px;
+  min-width: 35px;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.logoContainer img.genesysLogo {
+  height: 90px;
+  min-width: 115px;
+}
+
+.logoContainer .eldovGroup {
+  min-width: 85px;
 }
 
 @media screen and (max-width: 1000px) {
