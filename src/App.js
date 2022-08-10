@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import styles from './App.module.css'
-import { AltSchool, CowryWise, Kuda } from './assets'
+import { AltSchool } from './assets'
 import {
   eldovGroup,
   factory1,
@@ -57,8 +57,6 @@ function App() {
               <aside className={styles.partnersLogo}>
                 <h5>Partners and Sponsors</h5>
                 <div className={styles.logoContainer}>
-                  <CowryWise className={styles.logo} />
-                  <Kuda className={styles.logo} />
                   <AltSchool className={styles.logo} />
                   <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" title="genesys" />
                   <img src={factory1} alt="factory1" title="Factory1" />

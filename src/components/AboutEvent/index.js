@@ -1,15 +1,5 @@
 import React from 'react'
-import {
-  AltSchool,
-  CowryWise,
-  eldovGroup,
-  factory1,
-  genesysLogo,
-  Kuda,
-  smoothLuxury,
-  teneceGroup,
-  veeMost,
-} from '../../assets'
+import { AltSchool, eldovGroup, factory1, genesysLogo, smoothLuxury, teneceGroup, veeMost } from '../../assets'
 import { Button } from '../Button'
 import styles from './styles.module.css'
 
@@ -30,8 +20,6 @@ const AboutEvent = () => {
       <h4 className={styles.brandSupportHeader}>Supported by top brands and merchants</h4>
 
       <div className={styles.logoContainer}>
-        <CowryWise className={styles.logo} />
-        <Kuda className={styles.logo} />
         <AltSchool className={styles.logo} />
         <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" />
         <img src={factory1} alt="factory1" />
