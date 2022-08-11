@@ -26,7 +26,7 @@ const AboutEvent = () => {
         <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" />
         <img src={teneceGroup} alt="tenece" />
         <img src={veeMost} alt="veeMost" />
-        <img src={smoothLuxury} alt="smooth luxury" />
+        <img src={smoothLuxury} className={styles.smoothLuxury} alt="smooth luxury" />
       </div>
     </section>
   )

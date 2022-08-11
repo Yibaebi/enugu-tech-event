@@ -96,6 +96,11 @@
   min-width: 85px;
 }
 
+.logoContainer .smoothLuxury {
+  width: 115px;
+  height: 115px;
+}
+
 @media screen and (max-width: 1000px) {
   .programAgenda {
     padding-left: 50px;
