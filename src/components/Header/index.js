@@ -40,7 +40,7 @@ const Header = () => {
               employers, generating business ideas, marketing strategies, and aquiring the necessary technical skills
               required to work in tech.
             </p>
-            <Button label="Register To Attend" onClick={openRegLink} />
+            <Button label="Click Here To Register" onClick={openRegLink} />
           </section>
         </React.Fragment>
       ) : (

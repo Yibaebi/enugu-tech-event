@@ -33,7 +33,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black', onClick =
                   <use xlinkHref="#circlePath" fill="none" />
                   <text fill="#000" width={168} height={168}>
                     <textPath xlinkHref="#circlePath" textLength="370">
-                      Register to attend for free&nbsp;
+                      Click Here To Register&nbsp;
                     </textPath>
                   </text>
                 </g>
@@ -61,7 +61,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black', onClick =
                   <use xlinkHref="#circlePath" fill="none" />
                   <text fill="#fff" width={168} height={168}>
                     <textPath xlinkHref="#circlePath" textLength="370">
-                      Register to attend for free&nbsp;
+                      Click Here To Register&nbsp;
                     </textPath>
                   </text>
                 </g>
@@ -91,7 +91,7 @@ const RoundButton = ({ position = '', size = 'small', color = 'black', onClick =
               <use xlinkHref="#circlePath" fill="none" />
               <text fill="#fff" width={168} height={168}>
                 <textPath xlinkHref="#circlePath" textLength="370">
-                  Register to attend for free&nbsp;
+                  Click Here To Register&nbsp;
                 </textPath>
               </text>
             </g>
