@@ -2,12 +2,12 @@ import React, { useMemo } from 'react'
 import styles from './App.module.css'
 import { AltSchool } from './assets'
 import {
+  buildspaceLogo,
   eldovGroup,
   factory1,
   genesysLogo,
   programImg,
   programImg2,
-  smoothLuxury,
   teneceGroup,
   veeMost,
 } from './assets/images'
@@ -63,7 +63,7 @@ function App() {
                   <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" title="eldov group" />
                   <img src={teneceGroup} alt="Tenece" title="Tenece" />
                   <img src={veeMost} alt="veeMost" title="veeMost" />
-                  <img src={smoothLuxury} className={styles.smoothLuxury} alt="smooth luxury" title="smooth luxury" />
+                  <img src={buildspaceLogo} className={styles.smoothLuxury} alt="smooth luxury" />
                 </div>
               </aside>
             </section>

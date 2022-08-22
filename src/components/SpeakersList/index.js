@@ -37,8 +37,8 @@ const SpeakersList = () => {
       {
         image: napaOwusah,
         name: 'Napa Onwusah',
-        designation: 'Head of Sales',
-        company: ' GCS, Sub-Saharan Africa, Google',
+        designation: 'Founder, Shuzia',
+        company: ' Ex- Google, Microsoft, SAP, VISA, Cisco',
         linkedIn: 'https://www.linkedin.com/in/napaonwusah/',
       },
       {
@@ -57,7 +57,7 @@ const SpeakersList = () => {
       },
       {
         image: hackSultan,
-        name: 'Sultan Akintunde',
+        name: 'Hack Sultan',
         designation: 'Co-Founder + Tech',
         company: 'AltSchool Africa + TalentQL',
         linkedIn: 'https://www.linkedin.com/in/hacksultan/',

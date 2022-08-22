@@ -1,3 +1,4 @@
+import buildspaceLogo from './buildspace.png'
 import collinsNdukwe from './collins ndukwe.jpeg'
 import drMbah from './dr mba.png'
 import eldovGroup from './Eldov Group.png'
@@ -42,4 +43,5 @@ export {
   teneceGroup,
   veeMost,
   smoothLuxury,
+  buildspaceLogo,
 }
