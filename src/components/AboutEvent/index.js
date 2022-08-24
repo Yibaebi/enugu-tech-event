@@ -1,5 +1,5 @@
 import React from 'react'
-import { AltSchool, buildspaceLogo, eldovGroup, factory1, genesysLogo, teneceGroup, veeMost } from '../../assets'
+import { AltSchool, buildspaceLogo, eldovGroup, factory1, genesysLogo, veeMost } from '../../assets'
 import { Button } from '../Button'
 import styles from './styles.module.css'
 
@@ -24,7 +24,6 @@ const AboutEvent = () => {
         <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" />
         <img src={factory1} alt="factory1" />
         <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" />
-        <img src={teneceGroup} alt="tenece" />
         <img src={veeMost} alt="veeMost" />
         <img src={buildspaceLogo} className={styles.smoothLuxury} alt="smooth luxury" />
       </div>
