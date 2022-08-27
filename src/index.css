@@ -1,41 +1,48 @@
 /* Helevetica Neue Font Imports */
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Light.otf');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Medium.otf');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-RegularItalic.otf');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Thin.otf');
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HeleveticaNeue/HelveticaNeue-Ultralight.otf');
   font-weight: 200;
@@ -44,60 +51,70 @@
 
 /* Recoleta Fonts Imports*/
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Black.ttf');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Light.ttf');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Medium.ttf');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Bold.ttf');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Ultra-Light.ttf');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/gt-walsheim/GT-Walsheim-Pro-Thin.ttf');
   font-weight: 100;
@@ -106,30 +123,35 @@
 
 /*  */
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Black.ttf');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-SemiBold.ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Light.ttf');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Medium.ttf');
   font-weight: 500;
@@ -137,24 +159,28 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-ExtraBold.ttf');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-UltraLight.ttf');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Gilroy';
   src: url('./assets/fonts/Gilroy/Gilroy-Thin.ttf');
   font-weight: 100;

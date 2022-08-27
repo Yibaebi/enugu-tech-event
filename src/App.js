@@ -1,7 +1,16 @@
 import React, { useMemo } from 'react'
 import styles from './App.module.css'
 import { AltSchool } from './assets'
-import { buildspaceLogo, eldovGroup, factory1, genesysLogo, programImg, programImg2, veeMost } from './assets/images'
+import {
+  buildspaceLogo,
+  eldovGroup,
+  factory1,
+  genesysLogo,
+  girlPowerMovement,
+  programImg,
+  programImg2,
+  veeMost,
+} from './assets/images'
 import { AboutEvent, Button, Footer, Header, HorizontalTextScroller, ProgramAgenda, SpeakersList } from './components'
 import { ContactUs } from './components/ContactUs'
 import { useWindowSize } from './hooks'
@@ -52,6 +61,12 @@ function App() {
                   <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" title="genesys" />
                   <img src={factory1} alt="factory1" title="Factory1" />
                   <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" title="eldov group" />
+                  <img
+                    src={girlPowerMovement}
+                    className={styles.genesysLogo}
+                    alt="Girl Power Movement"
+                    title="Girl Power Movement"
+                  />
                   <img src={veeMost} alt="veeMost" title="veeMost" />
                   <img src={buildspaceLogo} className={styles.smoothLuxury} alt="smooth luxury" />
                 </div>

@@ -5,6 +5,7 @@ import eldovGroup from './Eldov Group.png'
 import factory1 from './Factory1 logo.png'
 import falz from './falz.png'
 import genesysLogo from './Genesys logo.png'
+import girlPowerMovement from './Girl Power Movement.png'
 import hackSultan from './Hack_Sultan.jpeg'
 import mr_eazi from './mr_eazi.png'
 import napaOwusah from './napa owusah.png'
@@ -44,4 +45,5 @@ export {
   veeMost,
   smoothLuxury,
   buildspaceLogo,
+  girlPowerMovement,
 }
