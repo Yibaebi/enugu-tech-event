@@ -9,11 +9,7 @@ import styles from './styles.module.css'
 const Header = () => {
   const windowSize = useWindowSize()
   const isMobile = useMemo(() => windowSize.width <= 480, [windowSize])
-  const openRegLink = () =>
-    window.open(
-      'https://docs.google.com/forms/d/124pPi1it79qGOsMgCG53umoowUwLMDAf9kVyN2jlYa4/edit?usp=sharing',
-      '_blank',
-    )
+  const openRegLink = () => window.open('https://forms.gle/NiyH4NbFvGUs7vjG9', '_blank')
 
   return (
     <header className={styles.header}>

@@ -8,11 +8,7 @@ const Footer = () => {
   const windowSize = useWindowSize()
   const isMobile = windowSize.width <= 480
 
-  const openRegLink = () =>
-    window.open(
-      'https://docs.google.com/forms/d/124pPi1it79qGOsMgCG53umoowUwLMDAf9kVyN2jlYa4/edit?usp=sharing',
-      '_blank',
-    )
+  const openRegLink = () => window.open('https://forms.gle/NiyH4NbFvGUs7vjG9', '_blank')
   return (
     <footer className={styles.footer}>
       <section className={styles.copywrite}>
