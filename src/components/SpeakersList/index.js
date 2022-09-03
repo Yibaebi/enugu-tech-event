@@ -9,6 +9,7 @@ import {
   okeyEze,
   SpeakersArrowLeft,
   SpeakersArrowRight,
+  ugochukwuAronu,
   williamsUchemba,
 } from '../../assets'
 import { useWindowSize } from '../../hooks'
@@ -61,6 +62,13 @@ const SpeakersList = () => {
         designation: 'Co-Founder + Tech',
         company: 'AltSchool Africa + TalentQL',
         linkedIn: 'https://www.linkedin.com/in/hacksultan/',
+      },
+      {
+        image: ugochukwuAronu,
+        name: 'Ugochukwu Aronu',
+        designation: 'Co-founder / CEO',
+        company: 'Xend, Wicrypt, Ogwugo.',
+        linkedIn: 'https://www.linkedin.com/in/ugochukwu-aronu-4477a59b',
       },
     ],
     [],

@@ -19,6 +19,7 @@ import speakerWoman from './speaker_wman.png'
 import teneceGroup from './Tenece logo.png'
 import mobileLogo from './TxE Summit_Colour 2.png'
 import mobileWhiteLogo from './TxE Summit_White 1.png'
+import ugochukwuAronu from './Ugochukwu_Aronu.jpg'
 import veeMost from './VeeMost-Logo.png'
 import williamsUchemba from './williiams uchemba.png'
 
@@ -46,4 +47,5 @@ export {
   smoothLuxury,
   buildspaceLogo,
   girlPowerMovement,
+  ugochukwuAronu,
 }
