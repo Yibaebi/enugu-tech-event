@@ -1,5 +1,16 @@
 import React from 'react'
-import { AltSchool, buildspaceLogo, eldovGroup, factory1, genesysLogo, girlPowerMovement, veeMost } from '../../assets'
+import {
+  adarcrom,
+  arcromride,
+  buildspaceLogo,
+  eldovGroup,
+  factory1,
+  genesysLogo,
+  girlPowerMovement,
+  veeMost,
+  willUchembaFoundation,
+  xendFinance,
+} from '../../assets'
 import { Button } from '../Button'
 import styles from './styles.module.css'
 
@@ -20,18 +31,21 @@ const AboutEvent = () => {
       <h4 className={styles.brandSupportHeader}>Supported by top brands and merchants</h4>
 
       <div className={styles.logoContainer}>
-        <AltSchool className={styles.logo} />
-        <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" />
-        <img src={factory1} alt="factory1" />
-        <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" />{' '}
+        <img src={willUchembaFoundation} className={styles.willUchembaLogo} alt="genesys" title="genesys" />
+        <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" title="genesys" />
+        <img src={factory1} alt="factory1" title="Factory1" />
+        <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" title="eldov group" />
+        <img src={xendFinance} className={styles.eldovGroup} alt="smooth luxury" />
         <img
           src={girlPowerMovement}
           className={styles.genesysLogo}
           alt="Girl Power Movement"
           title="Girl Power Movement"
         />
-        <img src={veeMost} alt="veeMost" />
+        <img src={veeMost} alt="veeMost" title="veeMost" />
         <img src={buildspaceLogo} className={styles.smoothLuxury} alt="smooth luxury" />
+        <img src={adarcrom} className={styles.genesysLogo} alt="smooth luxury" />
+        <img src={arcromride} className={styles.genesysLogo} alt="smooth luxury" />
       </div>
     </section>
   )

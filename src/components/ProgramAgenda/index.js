@@ -28,11 +28,11 @@ const ProgramAgenda = () => {
         highlights: [
           [
             'Idea Pitch Session',
-            'Innovative businesses will be given an opportunity to pitvhntheir ideas and businesss solutions to a panel of judges and recieve feedback.',
+            'Innovative businesses will be given an opportunity to pitch their ideas and businesss solutions to a panel of judges and recieve feedback.',
           ],
           [
             'Grants and Support for Startups',
-            'Innovative businesses will stand a chance to be awarded sedd fund grants to encourage their ventures.',
+            'Innovative businesses will stand a chance to be awarded seed fund grants to encourage their ventures.',
           ],
           [
             'Mentorship opportunities',

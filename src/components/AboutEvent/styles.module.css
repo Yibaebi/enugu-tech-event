@@ -100,6 +100,11 @@
   min-width: 115px;
 }
 
+.logoContainer img.willUchembaLogo {
+  height: 68px;
+  width: 90px;
+}
+
 .logoContainer .eldovGroup {
   min-width: 85px;
 }

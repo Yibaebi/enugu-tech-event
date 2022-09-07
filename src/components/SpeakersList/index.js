@@ -26,7 +26,7 @@ const SpeakersList = () => {
         name: 'Dr. Peter Mbah',
         designation: 'Keynote Speaker CEO',
         company: 'Pinnacle Oil & Gas',
-        linkedIn: 'https://www.linkedin.com',
+        linkedIn: 'https://www.linkedin.com/in/peter-mbah-53291422',
       },
       {
         image: collinsNdukwe,
@@ -47,7 +47,7 @@ const SpeakersList = () => {
         name: 'Williams Uchembah',
         designation: 'Actor, Filmaker, Humanitarian',
         company: 'Founder, WUF',
-        linkedIn: 'https://www.linkedin.com/in/williams-uchemba-1807091a0/',
+        linkedIn: 'https://www.linkedin.com/in/williams-uchembah-466b32230',
       },
       {
         image: okeyEze,

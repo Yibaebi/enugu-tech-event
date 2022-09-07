@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react'
 import styles from './App.module.css'
-import { AltSchool } from './assets'
 import {
+  adarcrom,
+  arcromride,
   buildspaceLogo,
   eldovGroup,
   factory1,
@@ -10,6 +11,8 @@ import {
   programImg,
   programImg2,
   veeMost,
+  willUchembaFoundation,
+  xendFinance,
 } from './assets/images'
 import { AboutEvent, Button, Footer, Header, HorizontalTextScroller, ProgramAgenda, SpeakersList } from './components'
 import { ContactUs } from './components/ContactUs'
@@ -57,10 +60,11 @@ function App() {
               <aside className={styles.partnersLogo}>
                 <h5>Partners and Sponsors</h5>
                 <div className={styles.logoContainer}>
-                  <AltSchool className={styles.logo} />
+                  <img src={willUchembaFoundation} className={styles.willUchembaLogo} alt="genesys" title="genesys" />
                   <img src={genesysLogo} className={styles.genesysLogo} alt="genesys" title="genesys" />
                   <img src={factory1} alt="factory1" title="Factory1" />
                   <img src={eldovGroup} className={styles.eldovGroup} alt="eldov group" title="eldov group" />
+                  <img src={xendFinance} className={styles.eldovGroup} alt="smooth luxury" />
                   <img
                     src={girlPowerMovement}
                     className={styles.genesysLogo}
@@ -69,6 +73,8 @@ function App() {
                   />
                   <img src={veeMost} alt="veeMost" title="veeMost" />
                   <img src={buildspaceLogo} className={styles.smoothLuxury} alt="smooth luxury" />
+                  <img src={adarcrom} className={styles.genesysLogo} alt="smooth luxury" />
+                  <img src={arcromride} className={styles.genesysLogo} alt="smooth luxury" />
                 </div>
               </aside>
             </section>
