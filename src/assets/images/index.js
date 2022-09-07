@@ -1,3 +1,5 @@
+import adarcrom from './adarcrom.png'
+import arcromride from './arcromride.png'
 import buildspaceLogo from './buildspace.png'
 import collinsNdukwe from './collins ndukwe.jpeg'
 import drMbah from './dr mba.png'
@@ -21,9 +23,15 @@ import mobileLogo from './TxE Summit_Colour 2.png'
 import mobileWhiteLogo from './TxE Summit_White 1.png'
 import ugochukwuAronu from './Ugochukwu_Aronu.jpg'
 import veeMost from './VeeMost-Logo.png'
+import willUchembaFoundation from './williams_uchemba_foundation.png'
 import williamsUchemba from './williiams uchemba.png'
+import xendFinance from './xend_finance.png'
 
 export {
+  adarcrom,
+  willUchembaFoundation,
+  xendFinance,
+  arcromride,
   programImg,
   speakerMan,
   speakerWoman,
